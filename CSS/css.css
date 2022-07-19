@@ -1,0 +1,281 @@
+/*Style of coffeeOfficial.html  */
+*{ 
+    scroll-behavior: smooth;
+}
+body{
+    background: rgb(255, 255, 255); 
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    
+}
+
+header{
+    text-align: center;
+    
+    
+}
+
+
+nav ul li{
+    float:right;
+    list-style: none;
+    margin: 10px;
+    
+    
+    
+}
+nav{
+    background:rgb(0, 0, 0); 
+    border: 4px solid black;
+    /* Lo que esta arriba esta todo correcto */
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.tutu{
+    clear: both;
+    
+}
+section{
+    float: left;
+    width: calc(80% - 20px);
+    background-color: #b7bfff;
+    padding: 10px;
+    border-radius: 30px;
+    
+    
+    
+}
+aside{
+    float: left;
+    width: calc(20% - 20px);
+    min-height: 520px;
+    background: 1965f1; 
+    padding-left: 20px;
+    
+}
+footer{
+    background: rgb(255, 255, 255);
+    color: rgb(20, 0, 168);
+    font-size: 30px;
+    text-align: center;
+    height: 150px;
+    
+}
+.articulo{
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-radius: 20px;    
+    border-bottom: 3px rgb(0, 0, 0) solid;
+    overflow: auto;
+    
+    
+}
+
+h1{
+    color: rgb(0, 0, 0);
+    font-size: 70px;
+    font-family: 'Shadows Into Light', cursive;
+    text-shadow: 2px 2px 1px rgb(0, 0, 0);
+    
+    
+}
+h2{
+    font-size: 35px ;
+    font-family: 'Cinzel', serif;
+    position: relative;
+    top: 25px;
+    user-select: none;
+    text-decoration: overline #ffffff 5px;
+    text-shadow: 2px 3px 4px rgb(255, 255, 255);
+    
+}
+.parrafo_pag{
+    font-family: 'Cutive Mono', monospace;
+    font-size: 25px;
+    font-weight: 900;
+    
+    color: black;
+    
+
+}
+h3{
+    font-size: 25px;
+    display: inline;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 1000;
+    font-style: italic; 
+}
+h4{
+    padding-left: 50px;
+}
+a{
+   
+    color: rgb(255, 255, 255);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    margin: 3px;
+    user-select: none;
+    padding: 0;
+    
+    
+}
+p{
+    font-family: 'Trispace', sans-serif;
+    color: rgb(0, 0, 0);
+}
+img{
+    width: 252px;
+    height: 252px;
+    float: left;
+    position: relative;
+    top: -39px;
+    border: 3px solid rgb(0, 0, 0);
+    padding: 12px;
+   
+    
+}
+.inputing{
+    padding: 6px;
+    border: rgb(0, 0, 0) 1px solid;
+    outline: black 1px solid;
+
+}
+input::placeholder{
+    font-size: 17px;
+    
+    
+ 
+}
+
+a:hover{
+    color: #c9fc9f;
+    cursor: pointer;
+}
+
+
+i{
+    color: rgb(255, 255, 255);
+    
+}
+
+
+
+/* TIPOS DE CAFE */
+
+
+.TypeCafe{
+    font-size: 21px;
+    display: inline;
+    font-family: monospace;
+    color: rgb(0, 0, 0);
+}
+.TypeCafe:hover{
+    color: #000000;
+    font-size: 27px;
+    cursor: pointer;
+    transition: .6s ease-in ;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA RESPONSIVE DESIGN*/
+
+
+/* Phone */
+@media screen and (max-width: 767px)  {
+    
+    section{
+        float: left;
+        width: calc(100% - 20px);
+        min-height: 500px;
+        background: #c9c9c9;
+        padding: 10px;
+        color: red;
+    }
+    aside{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 70px 70px 70px;
+        padding: 5%;
+    }
+    footer{
+        height: 20px;
+        background: rgb(255, 255, 255); 
+        color: rgb(0, 0, 0);
+    
+    }
+   
+ 
+    h2{
+        text-align:start;
+        position: relative;
+        top: 80px;
+    }
+    .parrafo_pag{
+        display: block;
+        padding-top:60px;
+    }
+}
+
+/*TABLET*/
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    body{
+        background-color: red;
+        padding: 0px;
+    }
+    nav{
+        display: grid;
+        grid-template-columns: repeat(8, 95px);
+        grid-template-rows: 1fr;
+        background:rgb(0, 0, 0); 
+        position: relative;
+        top: 35px;    
+        list-style: none;
+        padding: 5px;
+        text-align: center; 
+    }
+    a{
+        font-size: 15px;
+    }
+    .tutu{
+        clear: both;
+    }
+   
+}
+
+/*Desktop*/
+
+@media screen and (min-width: 1024px){
+    body{
+        background-color: #f8f8f8;
+    }
+    
+}
+h3{
+    color: #000000;
+    border-bottom: 2px solid black;
+    font-size: 18px;
+    
+}
+.riposati{
+    background-color: aqua;
+    position: fixed;
+    left: 1300px;
+    border-radius: 50px;
+    padding: 10px;
+    border: #000000 solid 2px;
+}
