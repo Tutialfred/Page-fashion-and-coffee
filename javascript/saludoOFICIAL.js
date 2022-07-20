@@ -1,3 +1,5 @@
+// Trabaja con "saludar cliente.HTML"
+
 let name = prompt("Hello' Tell me your name"); //Deja la opcion al usuario para escribir 
 
 
